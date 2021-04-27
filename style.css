@@ -16,27 +16,29 @@
 html,
 body {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 15px;
+  font-size: 62.5%;
   background-color: var(--color-very-light-gray);
 }
 
 .container {
-  max-width: 60%;
-  height: 500px;
-  padding-top: 90px;
-  margin: auto;
+  padding-top: 9rem;
+  border: none;
 
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .card {
-  padding: 40px;
+  padding: 4rem;
+  height: 40rem;
+  flex: 0 0 20%;
 }
 
 .card-sedan {
   background-color: var(--color-bright-orange);
-  border-radius: 12px 0 0 12px;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .card-suv {
@@ -45,34 +47,35 @@ body {
 
 .card-luxury {
   background-color: var(--color-very-dark-cyan);
-  border-radius: 0 12px 12px 0;
-}
-
-.icon-car {
+  border-radius: 0 1rem 1rem 0;
 }
 
 h2 {
   font-family: Big Shoulders Display, sans-serif;
   font-weight: 700;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-very-light-gray);
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 p {
   color: var(--color-transparent-white);
+  font-size: 1.5rem;
 }
 
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
   text-decoration: none;
+  font-size: 1.5rem;
   background-color: var(--color-very-light-gray);
   border: 1px solid inherit;
-  border-radius: 200px;
-  margin-top: 60px;
+  border-radius: 5rem;
+  margin-top: 5rem;
+  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -95,10 +98,33 @@ p {
 }
 
 .attribution {
-  padding-top: 60px;
-  font-size: 11px;
+  padding-top: 6rem;
+  font-size: 1rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 30rem;
+    max-width: 90%;
+  }
+
+  .card-sedan {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card-luxury {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .attribution {
+    margin-top: 8rem;
+  }
 }
