@@ -13,13 +13,11 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: var(--color-very-light-gray);
-}
-
+html,
 body {
-  font-family: Lexend Deca, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
+  background-color: var(--color-very-light-gray);
 }
 
 .container {
@@ -33,11 +31,12 @@ body {
 }
 
 .card {
-  padding: 30px;
+  padding: 40px;
 }
 
 .card-sedan {
   background-color: var(--color-bright-orange);
+  border-radius: 12px 0 0 12px;
 }
 
 .card-suv {
@@ -46,6 +45,7 @@ body {
 
 .card-luxury {
   background-color: var(--color-very-dark-cyan);
+  border-radius: 0 12px 12px 0;
 }
 
 .icon-car {
@@ -55,11 +55,47 @@ h2 {
   font-family: Big Shoulders Display, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: var(--color-very-light-gray);
   padding: 20px 0;
 }
 
+p {
+  color: var(--color-transparent-white);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: var(--color-very-light-gray);
+  border: 1px solid inherit;
+  border-radius: 200px;
+  margin-top: 60px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-very-light-gray);
+  color: var(--color-very-light-gray);
+}
+
+.btn-sedan {
+  color: var(--color-bright-orange);
+}
+
+.btn-suv {
+  color: var(--color-very-dark-cyan);
+}
+
+.btn-luxury {
+  color: var(--color-very-dark-cyan);
+}
+
 .attribution {
+  padding-top: 60px;
   font-size: 11px;
   text-align: center;
 }
