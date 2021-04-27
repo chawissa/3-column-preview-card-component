@@ -1,0 +1,68 @@
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-very-light-gray);
+}
+
+body {
+  font-family: Lexend Deca, sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 60%;
+  height: 500px;
+  padding-top: 90px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 30px;
+}
+
+.card-sedan {
+  background-color: var(--color-bright-orange);
+}
+
+.card-suv {
+  background-color: var(--color-dark-cyan);
+}
+
+.card-luxury {
+  background-color: var(--color-very-dark-cyan);
+}
+
+.icon-car {
+}
+
+h2 {
+  font-family: Big Shoulders Display, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-very-light-gray);
+  padding: 20px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
